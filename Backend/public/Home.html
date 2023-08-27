@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operations</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <button id="createBtn" class="btn">Create</button>
+        <button id="updateBtn" class="btn">Update</button>
+        <button id="deleteBtn" class="btn">Delete</button>
+    </div>
+
+    <div class="container" id="formContainer">
+        <div id="createForm" class="hidden">
+            <h2>Create Person</h2>
+            <form id="createFormFields">
+                <input type="text" id="createName" placeholder="Name">
+                <input type="number" id="createWeight" placeholder="Weight">
+                <input type="number" id="createHeight" placeholder="Height">
+                <button type="button" id="createSubmit" class="btn">Create</button>
+            </form>
+        </div>
+
+        <div id="updateForm" class="hidden">
+            <h2>Update Person</h2>
+            <form id="updateFormFields">
+                <input type="text" id="updateName" placeholder="Name">
+                <input type="number" id="updateWeight" placeholder="Weight">
+                <input type="number" id="updateHeight" placeholder="Height">
+                <button type="button" id="updateSubmit">Update</button>
+            </form>
+        </div>
+
+        <div id="deleteForm" class="hidden">
+            <h2>Delete Person</h2>
+            <form id="deleteFormFields">
+                <input type="text" id="deleteName" placeholder="Name">
+                <button type="button" id="deleteSubmit">Delete</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="responseTable">
+        <!-- Response table will be displayed here -->
+    </div>
+    <button onclick="logout()" class="btn">Logout</button>
+    <script src="Home.js"></script>
+</body>
+
+</html>
